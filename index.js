@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/api', apiRouter);
 
-app.listen('3000', () => {
-    console.log('hola');
+app.get("/", (req, res) => {
+  res.send("hola GLG");
+})
+
+app.listen('4000', () => {
+  console.log('hola');
 })
